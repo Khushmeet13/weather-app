@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans',  sans-serif;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #ADD8E6, #191970);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70vh;
+    min-height: 600px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+}
+
+.inputField{
+   
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inputField .inputBox{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 60%;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-left: 60px;
+    background-color: white;
+    text-transform: capitalize;
+}
+
+.searchButton{
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 60px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.searchButton img{
+    height: 60%;  
+}
+
+.searchButton:hover{
+    background-color: rgba(255, 255, 255, 0.808);
+}
+
+.weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.weather .temp{
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.weather .city{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+    
+}
+
+ .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.details .col{
+    margin: 0 35px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 30px;
+    color: white;
+}
+
+.details .col img{
+    width: 40px;
+    margin-right: 10px;
+}
+
+.col .humidityPercent{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.col .windSpeed{
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.error{
+    text-align: left;
+    margin:20px 0 0 60px ;
+    color: red;
+    font-size: 16px;
+    display: none;
+}
+
+
